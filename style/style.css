@@ -8,8 +8,9 @@
 }
 
 :root{
-    --negro: #000;
+    --negro: #151515;
     --blanco: #fff;
+    --gris: #242424;
 }
 
 html{
@@ -47,7 +48,7 @@ header{
 
 }
 
-nav{
+.top{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +69,8 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     max-width: 200px;
-    margin-top: 3rem;    
+    margin-top: 3rem;
+    margin-bottom: 50rem;    
 }
 
 .redesSociales img{
@@ -79,8 +81,15 @@ nav{
     margin: 0 1.5rem;
 }
 
+.imagen{
+    position: relative;
+}
+
 .sobremi img{
-    transform: scale(0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
 }
 
 .sub{
@@ -100,9 +109,9 @@ nav{
 }
 
 @media(min-width: 1100px){
-    nav{
-        flex-direction: row;
-        justify-content: space-between;
+    .top{
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
     
     .sobremi{
@@ -166,13 +175,12 @@ nav{
 }
 
 /* Contacto */
-.formulario{
+.contacto{
     border-bottom: solid 3px var(--blanco);
-    background-color:darkgray;
+    background-color: var(--gris);
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .intro{
@@ -183,12 +191,27 @@ nav{
 .form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .inputText{
-    max-width: 90%;
-    background-color: darkgray;
+    width: 500px;
+    background-color: var(--gris);
+    border: none;
+    border-bottom: solid 1px var(--blanco);
+    margin-bottom: 2rem;
+    height: 50px;
+}
+
+.botonEnviar{
+    background-color: var(--gris);
+    border: none;
+    border-bottom: solid 2px green;
+    color: var(--blanco);
+    margin-bottom: 15rem;
+    margin-top: 2rem;
+    width: 100px;
+    margin-left: 400px;
     
 }
 
@@ -200,4 +223,5 @@ footer{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: 5rem;
 }
