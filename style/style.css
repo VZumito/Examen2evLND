@@ -20,20 +20,26 @@ html{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: grey;
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 h3{
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+@media(min-width: 1110px){
+    html{
+        margin: 0 50px;
+    }
 }
 
 /* Header */
@@ -110,15 +116,15 @@ header{
 
 .circulo{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 100%;
     transform: translate(-50%, -100%);
 }
 
 .ondas{
     position: absolute;
-    top:675%;
-    left: -50%;
+    top:580%;
+    left: -80%;
 }
 
 @media(min-width: 1100px){
@@ -258,7 +264,7 @@ header{
 }
 
 .inputText{
-    width: 500px;
+    width: 300px;
     background-color: var(--gris);
     border: none;
     border-bottom: solid 1px var(--blanco);
@@ -275,7 +281,7 @@ header{
     margin-bottom: 15rem;
     margin-top: 2rem;
     width: 100px;
-    margin-left: 400px;
+    margin-left: 100px;
     
 }
 
