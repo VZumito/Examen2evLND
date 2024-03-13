@@ -112,6 +112,7 @@ header{
     .top{
         display: grid;
         grid-template-columns: 50% 50%;
+        height: 150px;
     }
     
     .sobremi{
@@ -119,6 +120,26 @@ header{
         justify-content: space-between;
     }
     
+    .imagen{
+        position: absolute;
+        top: 65%;
+        left: 75%;
+        transform: translate(-50%, -100%);
+        z-index: -1;
+    }
+
+    .texto{
+        text-align: left;
+    }
+
+    .texto h1{
+        font-size: 8rem;
+    }
+
+    .texto p{
+        width: 50%;
+    }
+
 }
 
 /* Skills */
@@ -132,6 +153,14 @@ header{
 
 .skill{
     margin: 3rem;
+}
+
+@media(min-width: 1110px){
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: none;
+    }
 }
 
 /* Projects */
@@ -172,6 +201,14 @@ header{
 
 .projects img{
     width: 100%;
+}
+
+@media(min-width: 1110px){
+    .contenedorProyectos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
 }
 
 /* Contacto */
@@ -215,7 +252,15 @@ header{
     
 }
 
+@media(min-width: 1110px){
+    .contacto{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 5rem;
+        text-align: center;
+    }
 
+}
 
 /* Footer */
 footer{
@@ -224,4 +269,12 @@ footer{
     justify-content: center;
     text-align: center;
     margin-top: 5rem;
+}
+
+@media(min-width: 1110px){
+    .top{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 150px;
+    }
 }
