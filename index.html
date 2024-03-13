@@ -145,10 +145,12 @@
           fill in the form, and I’ll get back to you as soon as possible.</p>
       </div>
       <div class="form">
-        <input type="text" class="inputText" placeholder="NAME">
-        <input type="text" class="inputText" placeholder="EMAIL">
-        <textarea class="inputText" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="MESSAGE"></textarea>
-        <input type="submit" class="botonEnviar" value="Send message">
+        <form id="formulario" action="">
+          <input id="nombre" type="text" class="inputText" placeholder="NAME">
+          <input id="email" type="text" class="inputText" placeholder="EMAIL">
+          <textarea class="inputText" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+          <input type="submit" class="botonEnviar" value="Send message">
+        </form>
       </div>
     </section>
   </main>
@@ -165,5 +167,6 @@
       </div>
     </section>
   </footer>
+  <script src="./js.js"></script>
 </body>
 </html>

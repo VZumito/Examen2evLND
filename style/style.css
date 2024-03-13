@@ -264,6 +264,7 @@ header{
     border-bottom: solid 1px var(--blanco);
     margin-bottom: 2rem;
     height: 50px;
+    color: var(--blanco);
 }
 
 .botonEnviar{
@@ -303,4 +304,8 @@ footer{
         grid-template-columns: 50% 50%;
         height: 150px;
     }
+}
+
+.error{
+    border-bottom: solid 3px red;
 }
