@@ -260,6 +260,13 @@ header{
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.formu{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -281,8 +288,7 @@ header{
     margin-bottom: 15rem;
     margin-top: 2rem;
     width: 100px;
-    margin-left: 100px;
-    
+    margin-left: 200px;
 }
 
 @media(min-width: 1110px){
